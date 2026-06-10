@@ -1,8 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
 import {
-	FileTs,
-	FileSql,
-	FileJs,
 	ArrowSquareOut,
 	FileJsIcon,
 	FileSqlIcon,
@@ -32,6 +29,7 @@ const projects = [
 		description:
 			"Bulk-imported ~4.9M rows of dirty equipment data into MySQL on a resource-constrained AWS EC2 instance. Built a web frontend, expanded schema, and a REST API in PHP with 12 endpoints using a router pattern.",
 		stack: ["MySQL", "PHP", "AWS EC2", "REST API"],
+		github: null,
 		live: null,
 	},
 	{
