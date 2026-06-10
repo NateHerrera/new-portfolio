@@ -44,7 +44,7 @@ const projects = [
 		description:
 			"This site — a retro OS-inspired portfolio built with React, TypeScript, Vite, and Shadcn. Features a folder/tab system, framer motion animations, and a fully responsive layout.",
 		stack: ["React", "TypeScript", "Vite", "Shadcn", "Framer Motion"],
-		github: "https://github.com/NateHerrera/portfolio",
+		github: "https://github.com/NateHerrera/new-portfolio",
 		live: null,
 	},
 ];
