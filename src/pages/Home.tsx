@@ -5,21 +5,25 @@ import { AboutTab } from "../components/tabs/AboutTab";
 import { ContactTab } from "../components/tabs/ContactTab";
 
 const tabs = {
-	home: { label: "Home!", color: "bg-amber-100", border: "border-amber-300" },
+	home: {
+		label: "Home!",
+		color: "from-amber-100 to-amber-150",
+		border: "border-amber-400",
+	},
 	projects: {
 		label: "Projects!",
-		color: "bg-blue-100",
-		border: "border-blue-300",
+		color: "from-blue-100 to-blue-150",
+		border: "border-blue-400",
 	},
 	about: {
 		label: "About Me!",
-		color: "bg-green-100",
-		border: "border-green-300",
+		color: "from-green-100 to-green-150",
+		border: "border-green-400",
 	},
 	contact: {
 		label: "Get in Touch!",
-		color: "bg-purple-100",
-		border: "border-purple-300",
+		color: "from-purple-100 to-purple-150",
+		border: "border-purple-400",
 	},
 };
 
@@ -48,7 +52,15 @@ export const Home = () => {
 	};
 
 	return (
-		<div className="h-dvh bg-white flex flex-col">
+		<div
+			className="h-dvh flex flex-col"
+			style={{
+				backgroundColor: "#ffffff",
+				backgroundImage:
+					"radial-gradient(circle, #00000015 2px, transparent 1px)",
+				backgroundSize: "24px 24px",
+			}}
+		>
 			{/* Tabs row */}
 			<div className="flex overflow-x-auto">
 				{openTabs.map((tabKey) => (
@@ -67,12 +79,12 @@ export const Home = () => {
 
 			{/* Folder body */}
 			<div
-				className={`flex-1 rounded-tr-lg rounded-br-lg rounded-bl-lg border-4 overflow-hidden flex flex-col
-				${tabs[activeTab as keyof typeof tabs].color}
-				${tabs[activeTab as keyof typeof tabs].border}`}
+				className={`flex-1 rounded-tr-lg rounded-br-lg rounded-bl-lg border-4 overflow-hidden flex flex-col shadow-2xl
+					${tabs[activeTab as keyof typeof tabs].color}
+					${tabs[activeTab as keyof typeof tabs].border}`}
 			>
 				{/* Scrollable content */}
-				<div className="flex-1 overflow-y-auto flex flex-col items-center justify-center gap-4 md:gap-6 p-4 md:p-8">
+				<div className="flex-1 overflow-y-auto flex flex-col items-center justify-start gap-4 md:gap-6 p-4 md:p-8">
 					{renderTab()}
 				</div>
 
