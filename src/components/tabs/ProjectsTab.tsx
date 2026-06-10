@@ -29,8 +29,8 @@ const projects = [
 		description:
 			"Bulk-imported ~4.9M rows of dirty equipment data into MySQL on a resource-constrained AWS EC2 instance. Built a web frontend, expanded schema, and a REST API in PHP with 12 endpoints using a router pattern.",
 		stack: ["MySQL", "PHP", "AWS EC2", "REST API"],
-		github: null,
-		live: null,
+		github: undefined,
+		live: undefined,
 	},
 	{
 		id: "portfolio",
@@ -42,7 +42,7 @@ const projects = [
 			"This site — a retro OS-inspired portfolio built with React, TypeScript, Vite, and Shadcn. Features a folder/tab system, framer motion animations, and a fully responsive layout.",
 		stack: ["React", "TypeScript", "Vite", "Shadcn", "Framer Motion"],
 		github: "https://github.com/NateHerrera/new-portfolio",
-		live: null,
+		live: undefined,
 	},
 ];
 
