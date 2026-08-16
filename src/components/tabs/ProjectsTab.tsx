@@ -44,6 +44,18 @@ const projects = [
 		github: "https://github.com/NateHerrera/new-portfolio",
 		live: undefined,
 	},
+	{
+		id: "warrior",
+		filename: "warrior-nutrtion-web-dev.jsx",
+		icon: FileJsIcon,
+		status: "in progress",
+		title: "Portfolio",
+		description:
+			"This 4 page brochure website was developed to aid a local companies web traffic, WIP.",
+		stack: ["React", "JavaScript", "Vite", "Claude Code", "Vercel"],
+		github: undefined,
+		live: "https://warrior-nutrition-seven.vercel.app/",
+	},
 ];
 
 const statusStyles: Record<string, string> = {
