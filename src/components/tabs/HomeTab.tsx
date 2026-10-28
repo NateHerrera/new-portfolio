@@ -48,7 +48,7 @@ export const HomeTab = ({
 				transition={{ delay: 0.4, duration: 0.6 }}
 				className="text-muted-foreground text-xs md:text-sm text-center font-mono"
 			>
-				{">"} Aspiring Software Engineer
+				{">"} Aspiring Techie
 			</motion.p>
 
 			{/* Animated divider */}
